@@ -4,16 +4,28 @@ source 'https://rubygems.org'
 
 # Backend Gems
 gem 'rails'
+gem 'puma'
 gem 'sqlite3'
+# gem 'pg'
 gem 'sass-rails'
 gem 'uglifier'
 gem 'coffee-rails'
 gem 'jbuilder'
 gem 'sorcery'
+gem 'nokogiri'
+gem 'httparty'
+gem 'fastimage'
+gem 'draper'
+# gem 'rmagick'
+# gem 'acts-as-taggable-on'
+gem 'will_paginate'
+gem 'keyword_search'
+# gem 'textacular', "~> 3.0", require: 'textacular/rails'
 
 # Frontend Gems
 gem 'jquery-rails'
 gem 'bootstrap-sass'
+gem 'font-awesome-sass'
 
 source 'https://rails-assets.org' do
   # gem 'rails-assets-bootstrap'
@@ -26,6 +38,9 @@ group :development, :test do
   gem 'pry-byebug'
   gem 'web-console'
   gem 'spring'
+
+  gem 'minitest'
+  gem 'minitest-rails'
 
   gem 'guard'
   gem 'guard-minitest'
