@@ -1,3 +1,5 @@
+# Starter Gemfile for Rails projects
+
 source 'https://rubygems.org'
 
 # Backend Gems
@@ -14,6 +16,7 @@ gem 'jquery-rails'
 gem 'bootstrap-sass'
 
 source 'https://rails-assets.org' do
+  # gem 'rails-assets-bootstrap'
 end
 
 # Testing and development Gems
