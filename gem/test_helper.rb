@@ -18,6 +18,12 @@ require 'bundler/setup'
 
 require 'gem_name'
 
+module Minitest::Spec::DSL
+  def xit(desc = "anonymous", &block)
+    it(desc) { skip "(pending)" }
+  end
+end
+
 def travis_ci?
   !!ENV['TRAVIS']
 end
